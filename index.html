@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="images/x-icon" href="images/calculator.png">
+    <link rel="stylesheet" href="codes/style.css">
+    <title>MiniCalculator</title>
+</head>
+
+<body>
+
+    <h1>Mini Calculator</h1>
+
+    <main class="calContainer">
+        <input type="number" id="firstNum" class="firstNum" placeholder="Enter first Number">
+        <input type="number" id="secondNum" class="secondNum" placeholder="Enter Second Number">
+
+        <select id="operators" class="operators">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="÷">÷</option>
+            <option value="*">*</option>
+        </select>
+
+        <input type="button" id="equalBtn" onclick="calc()" value="=">
+
+        <hr>
+
+        <button id="acBtn" onclick="clearFields()"> AC </button>
+        <input type="number" id="result" class="result" placeholder="Result" readonly>
+    </main>
+
+    <footer id="credit">
+        <p id="creditText"> Designed, Coded and Maintained by : <a href="https://github.com/Basanta-Roka">Basanta Roka</a> </p> 
+    </footer>
+
+    <script src="codes/script.js"></script>
+
+</body>
+
+</html>
